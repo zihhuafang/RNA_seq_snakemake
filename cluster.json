@@ -1,0 +1,35 @@
+{
+    "__default__" :
+    {
+        "ncore" : 10,
+        "memo" : 2000,
+        "jobtime" : "24:00",
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "loglsf/{rule}_{wildcards.sample}.log"
+    },
+
+    "fastp" :
+    {
+        "ncore" : 6,
+        "memo" : 6000,
+        "jobtime" : "04:00",
+        "jobname" : "{rule}_{wildcards.sample}",
+        "logi" : "loglsf/{rule}_{wildcards.sample}.log"
+    },
+    "alignment" :
+    {
+        "ncore" : 12,
+        "memo" : 3500,
+        "jobtime" : "24:00",
+        "jobname" : "{rule}_{wildcards.ref}_{wildcards.sample}",
+        "logi" : "loglsf/{rule}_{wildcards.ref}_{wildcards.sample}.log"
+    },
+    "kallisto" :
+    {
+        "ncore" : 6,
+        "memo" : 3000,
+        "jobtime" : "04:00",
+        "jobname" : "{rule}_{wildcards.ref}_{wildcards.sample}",
+        "logi" : "loglsf/{rule}_{wildcards.ref}_{wildcards.sample}.log"
+    }
+}

@@ -1,0 +1,5 @@
+resources:
+    genomedir: /nfs/nas12.ethz.ch/fs1201/green_groups_tg_public/data/fang/pacbio_snake/ref    
+    fastqdir: /cluster/work/pausch/inputs/fastq/BTA
+tools:
+    FASTP: /cluster/work/pausch/group_bin/fastp
